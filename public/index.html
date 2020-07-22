@@ -1,28 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,300;0,500;1,600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/csstyle.css">
-
-    img {
-      width: 100%;
-      height: auto;
-}       
+<link rel="stylesheet" href="css/csstyle.css">  
 </head>
-<body>
-   <h1></h1>
-   
-   <img src="Tharntype.jpg" width="460" height="345">
-   <img src="Tharntype.jpg" alt="" srcset="Tharntype">
-   
+  <body>  
+<style> 
 
+
+    div.gallery{
+        margin: 5px;
+        border: 0.5px solid #ccc;
+        float: left;    /* ตำแหน่งรูป */
+        width: 450px;   /* ขนาดของรูป */
+
+    }
+    div.gallery:hover{
+        border: 5px solid #777;   /* สีกรอบแทบของรูปเวลลาคลิ๊ก */
+
+    }
+    div.gallery img{
+        width: 90%; /* พื้นที่ในกรอบของรูป */
+        height: auto;
+
+    }
+    div.desc {
+        padding: 10px; /* ระยะห่างของข้อความในภาพ*/
+        text-align: center;
+    }
+    
+}      
+</style>
+<style>
+
+  
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  margin: 50px;      /* ระยะห่างของแทบ */
+  border: 2px solid #00bfa5;  /*เส้นกรอบของคำว่า หน้าแรก*/
+  font-size: 20px;
+}
+
+.button1:hover {
+  background-color: #00bfa5;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  margin: 50px;        /* ระยะห่างของแทบ */
+  border: 2px solid #4dd0e1;  /*เส้นกรอบของคำว่า ซีรี่ย์แนะนำ*/
+  font-size: 20px;
+}
+
+.button2:hover {
+  background-color: #4dd0e1;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  margin: 50px;          /* ระยะห่างของแทบ */
+  border: 2px solid #008CBA ;  /*เส้นกรอบของคำว่า นักแสดง*/
+  font-size: 20px;
+}
+
+.button3:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  margin: 40px;  /* ระยะห่างของแทบ */
+  border: 2px solid #aed581;  /*เส้นกรอบของคำว่า รูปภาพ*/
+  font-size: 20px;
+}
+
+.button4:hover 
+   {background-color: #aed581 ;
+    color: white;
+  }
+  
+
+</style>
     <div class="headercs"> World Y </div> 
-    <div class="content">
-        หน้าแรก              แนะนำซีรี่ย์                  นักแสดง                รูปภาพ   
+    <div class="content"> 
+        <button class="button button1"> หน้าแรก </button>                                  
+        <button class="button button2">แนะนำซีรี่ย์ </button>                              
+        <button class="button button3">นักแสดง</button>                             
+        <button class="button button4">รูปภาพ</button>    
+                              
     </div>
+    <style> 
+        input[type=text] {
+          width: 250px;  /* ความกว้างของแถมค้นหา*/
+          box-sizing: border-box;
+          border: 2px solid rgb(158, 127, 127);
+          border-radius: 4px;
+          font-size: 16px;
+          background-color: white; 
+          padding: 12px 20px 12px 40px;
+          transition: width 0.4s ease-in-out;
+        }
+        
+        input[type=text]:focus {
+          width: 100%;
+        }
+
+        body{
+          background-image: url("pic/dm.jpg") ;  /*พื้นหลังทั้งหมด*/
+        }
+        </style>
+        <form>
+          <input type="text" name="search" placeholder="☞ ค้นหาซีรี่ย์เรื่องโปรด ☜">
+        </form>
+         
+        <div class="content">
+    <div class="gallery">
+        <a target="_blank" href="pic/pb.jpg">
+          <img src="pic/pb.jpg" alt="Daidang" width="600" height="400">
+        </a>
+        <div class="desc">♡ Untill we meet again ♡</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="pic/Tharntype.jpg">
+          <img src="pic/Tharntype.jpg" alt="tharntype" width="600" height="400">
+        </a>
+        <div class="desc">♡ Tharntype the series ♡</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="pic/why.jpg">
+          <img src="pic/why.jpg" alt="Why r u" width="600" height="400">
+        </a>
+        <div class="desc">♡ Why R U the series ♡</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="pic/kungu.JPEG">
+          <img src="pic/kungu.JPEG" alt="Why r u" width="600" height="400">
+        </a>
+        <div class="desc" >♡ 2gether the series ♡</div>
+      </div>
+     
+      <style>
+        ul {
+          list-style-type: none;  /*สัญญาลักษ์ลำดับ */
+          margin: 0;
+          padding: 0;   /*ระยะห่างสีเปลี้ยนแทบตอนคลิ๊ก*/
+          width: 500px;  /*ขนาดความกว้างของแถบซีรี่ย์ใหม่*/
+          background-color: #e57373;
+        }
+        
+        li a {
+          display: unset;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+        }
+        
+        /* สีเปลี่ยนตอนคลิ๊กลิ้ง */
+        li a:hover {
+          background-color: #880e4f;
+          color: white;
+        }
+        </style>   
+        <ul>  
+            <h2>👨‍❤️‍👨ซีรี่ย์ใหม่ 2020 !!!!!!</h2>
+
+          <li><a href="   ต้นหลชลธี  ">  ต้นหลชลธี </a></li>
+          <li><a href="   นิทานพันดาว  "> นิทานพันดาว </a></li>
+          <li><a href="  บังเอิญรัก 2  " >  บังเอิญรัก 2 </a></li>
+          <li><a href=" คนละทีเดียวกัน  "> คนละทีเดียวกัน </a></li>
+          
+        </ul>
+
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">  
+          <h2 class="w3-wide w3-center">CONTACT</h2>
+          <div class="w3-row w3-padding-32"></div>
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+              <i class="fa fa-map-marker" style="width:30px"></i> Thailand <br>
+              <i class="fa fa-phone" style="width:30px"></i> Phone<br>
+              <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+            </div>
+            <div class="w3-col m6">
+              <form action="/action_page.php" target="_blank"></form>
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                  <div class="w3-half">
+                    <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                  </div>
+                  <div class="w3-half">
+                    <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                  </div>
+                <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> 
 </body>
 </html>

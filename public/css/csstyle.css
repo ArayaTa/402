@@ -1,42 +1,47 @@
-body{
+ body{
     font-family: 'Mali', cursive;
     color: rgb(255, 255, 255);
-    background-color: rgb(233, 197, 238);
-   
+    font-size: 20px; /* ขนาดพื้นที่ของบนเบนเดอร์ */
+    text-align: center; 
+    
+     
    
  }
- .headercs {
- 
+ .headercs { 
     background-size: unset;
     font-size: 80px;
-    height: 100px;
+    height: 100px;      /* ความสูงของเบนเดอร์ world Y */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #bd5a5a;
-    text-shadow: 4px 4px rgb(252, 111, 111);
-    outline-style: double;
-    outline-width: 4px;
+    /*background-image: url("pic/logo/media/examples/lizard.png");
+    /*background-image: url("pic/logo.png");              /*ยังแก้ไม่ได้เยยยยยยยยยยย*/
+    background-color: rgb(71, 105, 105);   /*พื้นหลังของ world y*/
+    text-shadow: 5px 5px rgb(25, 192, 122);  /*เงา*/
+    outline-style: double; /*รูปแบบเส้น*/
+    outline-width: 20px;   /*เส้นกรอบนอก */  
+
+
  }
  
- .content{  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ecb1d9;
- }
 
-    
+ .content{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ }    
 
  .content{
      color: rgb(255, 255, 255);
-     background-color: #4d0000;
-     text-shadow: 1px 1px rgb(124, 44, 55);
+     text-shadow: 1px 1px rgb(56, 34, 37);  /* เงาตัวหนังสือ ของ body*/
 
      
  }
- .content{  
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #ecb1d9;
+ 
+ .content{
+   font-family: 'Mali', cursive;
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   text-align: center;
+ }
