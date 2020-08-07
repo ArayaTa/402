@@ -1,6 +1,23 @@
 body {
     padding-top: 5rem;
   }
+  body {
+    font-family: "Raleway", sans-serif
+  }
+
+  .w3-quarter img {
+    margin-bottom: -6px;
+    cursor: pointer
+  }
+
+  .w3-quarter img:hover {
+    opacity: 0.6;
+    transition: 0.3s
+  }
+
+  .newspaper {
+    column-count: 2;
+  }
   .starter-template {
     padding: 3rem 1.5rem;
     text-align: center;
